@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,600;1,300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section>
+        <div class="Circle"></div>
+        <header>
+            <a href="#" class="logo">
+               <img src="./img/logo-cafe.png" alt="logo-cafe" height="80px">
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gift</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Pay</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+        </header>
+        <div class="content">
+        <div class="textBox">
+            <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores, dolorum consequatur
+            repudiandae dignissimos quia facere, unde nemo voluptatibus possimus numquam neque doloribus
+            molestias reprehenderit quis repellat rerum aspernatur. Quibusdam consequuntur odio vitae enim beatae.</p>
+            <a href="#" target="-blank"> Learn More</a>
+        </div>
+        <div class="ImageBox">
+            <img src="./img/green.png" class="StarBucks">
+        </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./img/green.png" onclick="imgSlider('./img/green.png');changeCircleColor('#017143')"></li>
+            <li><img src="./img/pink.png" onclick="imgSlider('./img/pink.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="./img/S-p.png" onclick="imgSlider('./img/S-p.png');changeCircleColor('#cf61b0')"></li>
+        </ul>
+        <ul class="media">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.StarBucks').src = anything;
+        }
+        function changeCircleColor(color){
+           const Circle = document.querySelector('.Circle');
+           Circle.style.background = color;
+        }
+    </script>
+</body>
+</html>

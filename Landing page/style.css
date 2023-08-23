@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' ,sans-serif;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    padding:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  
+}
+header{
+    width: 100%;
+    position: absolute;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    
+}
+header .logo{
+    position: relative;
+}
+header ul{
+   position: relative;
+   display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 19px;
+    color: black;
+}
+header ul li a:hover{
+    color: rgb(81, 242, 116);
+    font-size: 20px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+}
+.content .textBox{
+     position: relative;
+     max-width: 600px;
+}
+.content .textBox h2{
+    color: #333;
+    font-size: 4rem;
+    line-height: 1.4em;
+    font-weight: 500;
+
+}
+.content .textBox h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p{
+    color: #333;
+}
+.content .textBox a{
+    display:inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing:1px ;
+}
+.content .textBox a:hover{
+    color: black;
+}
+.content  .ImageBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content  .ImageBox img{
+    width: 340px;
+}
+.thumb{
+    position:absolute;
+    left: 50%;
+    bottom: 20px ;
+    transform: translate(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px ;
+ 
+}
+.thumb li img{
+    width: 100%;
+    height:70px ;
+
+}
+.thumb li img:hover{
+    max-height: 90px;
+    transform: 0.5s;
+    cursor: pointer;
+    transform: translateY(-15px);
+}
+.media{
+    
+    align-items: flex-end;
+    position:absolute;
+    top: 50%;
+    display:flex ;
+    right: 30px;
+    transform: translateY(-50%);
+    justify-content: center;
+    flex-direction: column;
+   
+
+}
+.media li{
+    list-style: none;
+    display:flex ;   
+   
+} 
+    
+.media li a{
+    display: inline-block;
+    margin:5px 0;
+    transform: scale(1);
+    filter: invert(1);
+}
+
+.Circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #017143;
+    clip-path: circle(600px at right 800px);
+}
